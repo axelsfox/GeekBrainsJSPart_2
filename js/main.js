@@ -15,8 +15,10 @@ const renderProduct = (title, price) => {
 }
 
 const renderProducts = (list) => {
-    const productListHTML = list.map((item) => renderProduct(item.title, item.price));
-    // console.log(productListHTML);
+    const productListHTML = list.map((item) => renderProduct(item.title, item.price)).join(''); 
+    //map возвращает массив, который получается при вызове renderProduct для элементов исходного массива. Потому результат содержит запятые.
+    //С помощью join массив помещается в строку без разделения.
+    //console.log(productListHTML);
     document.querySelector('.products').innerHTML = productListHTML;
 }
 

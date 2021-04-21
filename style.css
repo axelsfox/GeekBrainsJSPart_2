@@ -24,3 +24,35 @@
 .btn-cart:hover {
     -webkit-filter: brightness(70%);
     filter: brightness(70%);
+}
+
+.products {
+    margin: 20px 30px;
+}
+
+.product-item {
+    margin: 10px 0px;
+    border: tomato solid 1px;
+    Width: 211px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.by-btn {
+    Width: 200px;
+    Height: 35px;
+    border: 1px solid #FF6A6B;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #FF6A6A;
+    color: white;
+    margin: 20px 0px;
+}
+
+p {
+    font-size: large;
+    color: tomato;
+    margin-top: 10px;
+}
