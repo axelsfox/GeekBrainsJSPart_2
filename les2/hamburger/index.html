@@ -10,10 +10,29 @@
 <body>
 <header>
     <div class="logo">Design your perfect burger!</div>
-    
 </header>
 <main>
-    <div class="mainMenu"></div>
+    <form action= # class = "formChoice">
+    <div class="choice">
+    <h1>Choose your size</h1>
+        <p><input name="size" type="radio" value="sizeBig" id="sizeBig" data-price="100" data-calor="40">Big</p>
+        <p><input name="size" type="radio" value="sizeSmall" id="sizeBig" data-price="100" data-calor="40">Small</p>
+    </div>
+
+    <div class="choice">
+    <h1>Choose your stuffings</h1>
+        <p><input type="checkbox" name="stuffings" value="cheese">cheese</p>
+        <p><input type="checkbox" name="stuffings" value="salad">salad</p>
+        <p><input type="checkbox" name="stuffings" value="potato">potato</p>
+    </div>
+    <div class="choice">
+        <h1>Choose your topping</h1>
+            <p><input type="checkbox" name="topping" value="mayonnaise">mayonnaise</p>
+            <p><input type="checkbox" name="topping" value="spices and herbs">spices and herbs </p>
+        </div> 
+    <p><input class="submitBtn" type="submit" value="Get It"></p>
+    </form>
+    
 </main>
 <script src="main.js"></script>
 </body>

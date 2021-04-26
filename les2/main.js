@@ -26,9 +26,10 @@ class CartItem {
 
 //пустой класс корзины
 class Cart {
-    constructor(container ='.btn-cart', good){
+    constructor(container ='.btn-cart'){
         this.container = container;
-        this.goods = good;
+        this.goods = [];
+        this.fetchGoods();
         this.render();
         this.sum();
 
@@ -37,6 +38,15 @@ class Cart {
         return this.goods.reduce((sum, {price}) => sum + price, 0)
     };
 
+    //fetch как в методичке пока что
+    fetchGoods() { 
+        this.goods = [
+            {id: 1, title: 'Notebook', price: 20000},
+            {id: 2, title: 'Mouse', price: 1500},
+            {id: 3, title: 'Keyboard', price: 5000},
+            {id: 4, title: 'Gamepad', price: 4500},
+      ];
+  };
 
     render() {
         const block = document.querySelector(this.container);
@@ -50,18 +60,10 @@ class Cart {
 };
 
 
-//пока до конца не разобралась с fetch пользовалась этим для проверки
-//let goods = [
-//    {id: 1, title: 'Notebook', price: 20000},
-//    {id: 2, title: 'Mouse', price: 1500},
-//    {id: 3, title: 'Keyboard', price: 5000},
-//    {id: 4, title: 'Gamepad', price: 4500},
-//    ];
-//
-//new Cart ('.btn-cart', goods);
+
 
 /*2. Добавьте для GoodsList метод, определяющий суммарную стоимость всех товаров.
-Такого классау нас нет и в материалах урока я его не нашла. Вероятно, имелся в виду ProductList. 
+Так как мы не совсем следовали методичке, такого класса у нас нет.
 Мне кажется, суммировать цену продуктов нужнее всего в рамках класса корзины. Выше метод добавлен в класс Cart*/
 
 
@@ -77,17 +79,7 @@ class Cart {
     Можно использовать примерную архитектуру класса из методички, но можно использовать и свою.*/
 
 
-class Hamburger {
-    constructor(size, stuffing) {
-         ... }
-    addTopping(topping) {    // Добавить добавку }
-    removeTopping(topping) { // Убрать добавку }
-    getToppings(topping) {   // Получить список добавок }
-    getSize() {              // Узнать размер гамбургера }
-    getStuffing() {          // Узнать начинку гамбургера }
-    calculatePrice() {       // Узнать цену }
-    calculateCalories() {    // Узнать калорийность }
-  }
+
 
 
 
