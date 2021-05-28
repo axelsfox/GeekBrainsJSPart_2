@@ -1,0 +1,16 @@
+[
+  {
+    "id_product": 101,
+    "img": "https://raw.githubusercontent.com/axelsfox/GeekBrainsJSPart_2/final_project/catalogImg/product_card_1.png",
+    "product_name": "Casual Jacket",
+    "product_text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 49
+  },
+  {
+    "id_product": 102,
+    "img": "https://raw.githubusercontent.com/axelsfox/GeekBrainsJSPart_2/final_project/catalogImg/product_card_2.png",
+    "product_text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "product_name": "Black women's jacket",
+    "price": 28
+  },
+  ]
